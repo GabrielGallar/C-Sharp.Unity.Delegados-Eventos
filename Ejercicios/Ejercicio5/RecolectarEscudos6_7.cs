@@ -54,6 +54,7 @@ public class RecolectarEscudos6_7 : MonoBehaviour
         puntuacion = collision.gameObject.GetComponent<PuntuarJugador>();
         puntuacion.OnMiRecoleccion += SumarPuntos;
         puntuacion.Recolectar();
+        Destroy(collision.gameObject);
     }
 
     public int GetPuntos()
